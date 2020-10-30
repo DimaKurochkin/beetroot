@@ -1,0 +1,111 @@
+@import url('./fonts-pn/stylesheet.css');
+
+:root{
+--BLACK: black; 
+--WHITE: #ffffff;
+--BLUE: blue;
+--DARK: #1D1C1C;
+--BASE-FONT: 'PN', sans-serif;
+--CONTAINER: 1550px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--BASE-FONT);
+   
+    color: var(--BLACK);
+}
+.container{
+    width: 100%;
+    max-width: var(--CONTAINER);
+    margin-left: auto;
+    margin-right: auto;
+}
+.section{
+    background-color: var(--WHITE);
+    padding: 108px 24px 73px;
+}
+.features-list{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   margin: 0 -32px;
+   flex-wrap: wrap;
+}
+
+.feature-card{
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.feature-list__item{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.feature-card__icon-wrapper{
+width: 64PX;
+height: 64px;
+border-radius: 50%;
+border: 1px solid #2a69a6;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+transition: fill 0.2s ease;
+}
+.feature-card__icon-wrapper:hover{
+    /* width: 64PX;
+    height: 64px;
+    border-radius: 50%; */
+    border: 1px solid (var(--WHITE));
+    background-color: #2a69a6;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; */
+}
+.feature-card__icon-wrapper:hover svg{
+    fill: var(--WHITE)
+}
+.feature-card__icon--dashboard{
+    position: relative;
+}
+.feature-card__title{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.feature-card__descriprion{
+font-size: 14px;
+line-height: 1.72;
+text-align: center;
+}
+
+.tablet-use{
+    width: 22px;
+    height: 30px;
+    fill: #2a69a6;
+    transition: fill 0.2s ease;
+}
+
+.dashboard-use{
+        width: 28px;
+        height: 23px;
+        fill: #2a69a6;
+        transition: fill 0.2s ease;
+}
+
+.settings-use{
+    width: 25px;
+    height: 26px;
+    fill: #2a69a6;
+    transition: fill 0.2s ease;
+}
+
+
