@@ -1,0 +1,51 @@
+.shopping-item {
+    display: block;
+    overflow: hidden;
+    padding: 16px;
+    @include flex(flex-start, center);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    transition-property: background-color, border-color ;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    &:hover {
+        background: $HOVER-BG-COLOR;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    &:active {
+        background: $ACTIVE-BG-COLOR;
+    }
+    &__input {
+        @include box(24px);
+        margin-right: 20px;
+        flex-shrink: 0;
+        &:checked + .shopping-item__content {
+            text-decoration: line-through;
+            .shopping-item__name{
+                color: $TEXT-SECONDARY-COLOR;
+                   
+            }
+           
+        }
+    }
+    &__content {
+        @include flex(flex-start, center);
+    }
+    &__name {
+        @include text($H20, 400, $WHITE);
+    }
+    &__extra {
+        @include text($H14, 400, $TEXT-SECONDARY-COLOR);
+        position: relative;
+        top: 1px;
+        display: inline-block;
+    
+    &:before {
+        content: '(';
+    }
+    &:after {
+        content: ')';
+    }
+    }
+}

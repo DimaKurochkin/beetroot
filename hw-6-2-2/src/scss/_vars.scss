@@ -1,0 +1,28 @@
+
+
+$GREY: #3B3F45;
+$GREY-LIGHT: #4A4F56;
+$HEADING-COLOR: #EB7E7E;
+$WHITE: #fff;
+$TEXT-SECONDARY-COLOR: #9B9AB0;
+$HOVER-BG-COLOR: #625E77;
+$EVEN-BG-COLOR:#7A7593;
+$ODD-BG-COLOR:#88839E;
+$ACTIVE-BG-COLOR:#cf8c8c;
+
+// Fonts
+
+$base-font:  'Trebuchet MS', Trebuchet, Arial, sans-serif;
+$base-font-size: 16px;
+//Font sizes
+
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+  }
+
+$H24: calcRem(24px);
+$H22: calcRem(22px);
+$H20: calcRem(20px);
+$H18: calcRem(18px);
+$H14: calcRem(14px);
